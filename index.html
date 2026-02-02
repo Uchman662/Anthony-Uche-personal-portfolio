@@ -3,16 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="WORK 1/src/main.rs">
-    <link rel="stylesheet" href="WORK 1/src/next.rs">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <script src = "WORK 1/src/main.rs"></script>
-    <script src="WORK 1/src/next.rs"></script>
-<div>
-<img src="" alt="">
+    <div id="header">
+       <div class="container">
+        <nav>
+            <img src="images/anthony logo.png" class="">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Skills</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#about">Education and Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Undergraduate student</p>
+            <h1>Hi, I'm <span>Anthony</span><br> Uche Nnadi From Nigeria</h1>
+        </div>
+       </div> 
+    </div>
+<!---  ------------about--------------  ---->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/WIN_20260121_14_42_35_Pro.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>My name is Anthony Uche Nnadi andi am an undergraduate who resides in Nigeria, i have know ledge of phython, HTML, CSS, Javascript and Rust and i am also learning cyber security
+                    i want to become an ethical hacker, web devloper and a cybersecurity Engineer. i want to be able to work for a well managed company. I also engage in sports like football, cycling, swimming, and basketball. </p>
 
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>  
+                    <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web development</span><br>Web app Development</li>
+                        <li><span>HTML/CSS/javascript/RUST</span><br>Designing Web Apps Interfaces</li>
+                        <li><span>Cybersecurity</span><br>Networking Devices</li>
+                        <li><span>Sports</span><br>Football, Basketball, Cycling, swimming</li>
+                    </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2025</span><br>Web Development Training at Mel Technologies</li>
+                    </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2025</span><br>Front and Back End Web Development at Mel Technologies</li>
+                        <li><span>2024</span><br>Design and Programming at Bloombreed High School</li>
+                          <li><span>2017</span><br>Football Training at Shell</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
 </div>
+<!---  ---------projects------------  -->
+<div id="projects">
+    <div class="container">
+         <h1 class="sub-title">What I Do</h1>
+         <div class="projects-list">
+           <div>
+            <h2>Networking</h2>
+            <p>Networking's main uses involve communication 
+                (email, video calls), resource sharing (printers, files, 
+                internet), information access (internet, cloud), 
+                collaboration (real-time project work), and enabling 
+                e-commerce </p>
+                  <a href="#">Learn more</a>
+           </div> 
+           <div>
+            <h2>RUST Coding</h2>
+            <p>Rust is a general-purpose, high-performance systems programming
+                 language used for building a wide array of reliable and
+                  memory-safe software, from operating systems and embedded
+                   systems to web services, game engines, and data science 
+                   backends</p>
+                  <a href="#">Learn more</a>
+           </div> 
+           <div>
+            <h2>Web development</h2>
+            <p>Web development is used to create, build, and maintain 
+        websites and web applications that run on browsers, 
+        encompassing front-end (user interface), back-end 
+        (server-side logic), and full-stack development.</p>
+                  <a href="#">Learn more</a>
+         </div>
+    </div>
+</div>
+<!--  -----------------portfolio-------------------  -->
+  <div id="portfolio">
+<div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+        <div class="work">
+            <img src="images/networking.jpeg" >
+            <div class="layer">
+                <h3>Networking Devices</h3>
+                <p>This projects connect different devicess in a company organisation
+                    in order to share resources between two devices
+                </p>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                 <a href="images/1ST WORK.pkt" download class="btn btn2">Download Project</a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/rust programming.png" >
+            <div class="layer">
+                <h3>RUST Programming</h3>
+                <p>This project was a rust program designed for memory management and to partake in my web development.
+                </p>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                 <a href="images/WORK 1" download class="btn btn2">Download Project</a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/online portfolio.jpeg" >
+            <div class="layer">
+                <h3>HTML online portfolio</h3>
+                <p>This project was a practice portfolio  that was built with only HTML.
+                </p>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                <a href="images/online portfolio.jpeg" download class="btn btn2">Download Project</a>
+            </div>
+            <h2>NOTE: CLICK ON THE RED CIRCLE IN THE MIDDLE OF THE PICTURE TO 
+                DOWNLOAD THE PROJECT
+            </h2>
+        </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+<!---  ------------contact---------------  --->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> uchennadichizoba@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 08133880127</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                     <a href=""><i class="fab fa-twitter-square"></i></a>
+                      <a href=""><i class="fab fa-instagram"></i></a>
+                       <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/waec uche nnadi.pdf" download class="btn btn2">Download CV</a>
+                <a href="images/uche transcript.pdf" download class="btn btn2">Download Extension</a>
+            </div>
+             <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+             </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright Anthony. Made <i class="fas fa-heart"></i> by Anthony Uche</p>
+    </div>
+</div>
+
+
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+</script>
+
+<script>
+
+
+var sidemenu = document.getElementById("sidemenu")
+
+function openmenu(){
+   sidemenu.style.right = "0" ;
+}
+function closemenu(){
+    sidemenu.style.right = "-200px";
+}
+
+
+
+</script>
+
 </body>
 </html>
